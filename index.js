@@ -40,12 +40,17 @@ function playGame(playerSelection, computerSelection, currentScores)
 function startGame()
 {
     currentScores = [0,0]
-    for(let i = 1; i<=2; i++)
+    for(let i = 1; i<=5; i++)
     {
-        alert(i)
         userChoice = prompt("Enter User Choice : ");
-        userChoice = userChoice.toLowerCase()
-        currentScores = playGame(userChoice, randomComputerChoice(), currentScores)
+        userChoice = userChoice.toLowerCase();
+        if(userChoice != "rock" && userChoice != "paper" && userChoice != "scissors"){
+            alert("Invalid user choice. Round skipped.");
+            continue;
+        }
+        else {
+            currentScores = playGame(userChoice, randomComputerChoice(), currentScores)
+        }
     }
     userScore = currentScores[0]
     computerScore = currentScores[1]
@@ -57,7 +62,7 @@ function startGame()
         alert("Computer wins the game.")
     }    
     else {
-        alert("Game End's in a Tie.")
+        alert("Game ends in a Tie.")
     }
 }
 
