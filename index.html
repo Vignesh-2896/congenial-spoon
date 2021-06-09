@@ -1,6 +1,31 @@
 <html>
-    <script src = "index.js"></script>
+    <head>
+        <title>Rock,Paper and Scissors !</title>
+    </head>
     <body>
-
+        <div id ="container">
+            <h1> Rock, Paper, Scissors Game !</h1>
+            <div id = "choices">
+                <h3 id ="message_to_user" > User can select their choice from below options : </h3>
+                <form>
+                    <div id = "choice">
+                        <img src = "rock.jpg">
+                        <input type = "radio" name = "choice" value = "rock" onclick = "startGame(this.value)">
+                    </div>
+                    <div id = "choice">
+                        <img src = "paper.jpg">
+                        <input type = "radio" name = "choice" value = "paper" onclick = "startGame(this.value)">
+                    </div>
+                    <div id = "choice">
+                        <img src = "scissors.jpg">
+                        <input type = "radio" name = "choice" value = "scissors" onclick = "startGame(this.value)">
+                    </div>                    
+                </form>
+            </div>
+            <div id = "messages">
+            </div>
+        </div>
     </body>
+    <script src = "index.js"></script>
+    <link rel = "stylesheet" href = "index.css">
 </html>

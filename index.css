@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+#choices, #messages, #records {
+    width:75%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 20px;;
+}
+
+#choices {
+    border-bottom:1px solid black;
+}
+
+#choice {
+    height : 90px;
+    width: 90px;
+    display:inline-block;
+    border: 1px solid black;
+}
+
+#choice img {
+    height: 70%;
+    width: 70%;
+    padding: 5px;
+}
+
+td {
+    text-align:center;
+}
